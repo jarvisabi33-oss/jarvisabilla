@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MediLife Pharma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>MediLife Pharma</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="research.html">Research & Trials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-search">
+            <h2>Our Product Catalog</h2>
+            <form>
+                <label for="product-name">Search Products:</label>
+                <input list="product-names" id="product-name" name="product-name" type="search" placeholder="e.g. Vitarise Max">
+                <datalist id="product-names">
+                    <option value="Vitarise Max">
+                    <option value="CardioProtect">
+                    <option value="SleepEase">
+                </datalist>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        
+        <section id="product-list">
+            <h3>Product Dosage Information</h3>
+            <table>
+                <caption>Detailed dosage and availability of MediLife Pharma products.</caption>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Therapeutic Area</th>
+                        <th>Standard Dosage</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vitarise Max</td>
+                        <td>Nutritional Supplement</td>
+                        <td>1 tablet daily</td>
+                        <td><mark>In Stock</mark></td>
+                    </tr>
+                    <tr>
+                        <td>CardioProtect</td>
+                        <td>Cardiology</td>
+                        <td>10mg, once a day</td>
+                        <td>Low Stock</td>
+                    </tr>
+                    <tr>
+                        <td>SleepEase</td>
+                        <td>Neurology</td>
+                        <td>5mg, before bedtime</td>
+                        <td><mark>In Stock</mark></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Consult your physician before starting any new medication.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Product Categories</h3>
+        <ul>
+            <li>Vitamins & Supplements</li>
+            <li>Cardiology</li>
+            <li>Neurology</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 MediLife Pharma. <small>All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
